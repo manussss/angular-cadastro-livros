@@ -12,6 +12,7 @@ import { CabecalhoComponent } from './cabecalho/cabecalho.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { LivroListaComponent } from './livros/livro-lista/livro-lista.component';
 import { MatExpansionModule } from '@angular/material/expansion';
+import { LivroService } from './livros/livro.service';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,7 @@ import { MatExpansionModule } from '@angular/material/expansion';
     MatToolbarModule,
     MatExpansionModule
   ],
-  providers: [],
+  providers: [LivroService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
